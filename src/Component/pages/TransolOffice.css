@@ -1,0 +1,36 @@
+.transolOffice {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  width: auto;
+}
+
+.transolOffice > button {
+  width: 500px;
+  height: 50px;
+  background-color: rgb(17, 14, 14);
+  margin: 20px;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+.tranolOfficcContact {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.tranolOfficcContact > h2 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.trasolOfficeSocialLinks {
+  display: flex;
+  flex-direction: row;
+}
+.trasolOfficeSocialLinks > h1 {
+  margin: 15px;
+}

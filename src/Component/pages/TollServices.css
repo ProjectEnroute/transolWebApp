@@ -1,0 +1,62 @@
+.TransolTollService {
+  margin-top: -200px;
+}
+
+.TransolTollService > h1 {
+  color: white;
+  line-height: 5px;
+}
+
+.TransolTollService > h3 {
+  color: white;
+  line-height: 5px;
+  line-height: 20px;
+  width: 50%;
+}
+
+.tollServicesForm {
+  position: relative;
+  margin: 5px;
+  background-color: gray;
+  height: auto;
+  margin-top: 150px;
+}
+
+.tollServicesForm > label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500px;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.tollServicesForm > form {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  max-width: 600px;
+}
+
+.tollServicesForm > form > input {
+  height: 40px;
+  margin-top: 20px;
+  padding-left: 20px;
+  outline: none;
+  border: none;
+  font-weight: 500px;
+}
+.tollServicesForm > form > input :hover {
+  background-color: lightgray;
+}
+
+.submit {
+  background-color: rgba(4, 3, 3, 0.905);
+  color: white;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: rgba(24, 23, 23, 0.905);
+}
