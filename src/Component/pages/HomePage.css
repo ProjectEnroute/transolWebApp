@@ -1,26 +1,27 @@
 .HomePage {
-	background-color: rgb(214, 213, 213);
+  background-color: #d4d4d4;
 }
 .HomePageCard {
-	width: 100%;
-	height: auto;
-	display: flex;
-	justify-content: space-around;
-	margin-top: -80px;
-	flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  display: grid;
+  justify-content: space-around;
+  margin-top: -120px;
+  grid-template-columns: 25% 25% 25%;
+  grid-template-rows: 250px;
 }
 
 .HomePageNearestOffice {
-	margin-top: 50px;
-	width: 100%;
-	height: auto;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .HomePageTrayHolder {
-	width: 90%;
+  width: 90%;
 }
 
 /* .HomePageNearestOffice > h2 {
@@ -28,119 +29,124 @@
 } */
 
 .HomeTrayContainer {
-	width: 100%;
-	height: 80px;
-	background-color: rgb(201, 201, 201);
-	border-radius: 10px;
-	display: flex;
-	align-items: center;
-	margin-bottom: 15px;
-	transition: all 300ms ease-out;
-	cursor: pointer;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(201, 201, 201);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  transition: all 300ms ease-out;
+  cursor: pointer;
 }
 
 .HomeTrayContainer:hover {
-	transform: scale(1.03);
-	background-color: rgb(235, 234, 234);
+  transform: scale(1.03);
+  background-color: rgb(235, 234, 234);
 }
 
 .HomeTrayContainer > h1 {
-	font-weight: bold;
-	margin-left: 8px;
-	color: brown;
+  font-weight: bold;
+  margin-left: 8px;
+  color: brown;
 }
 
 .HomeTrayContainer > p {
-	margin-left: 40px;
+  margin-left: 40px;
 
-	font-size: 25px;
-	font-weight: normal;
+  font-size: 25px;
+  font-weight: normal;
 }
 
 .HomeTrayContainer > img {
-	height: 30px;
-	width: 30px;
-	margin-left: 50px;
+  height: 30px;
+  width: 30px;
+  margin-left: 50px;
 }
 
 .pat {
-	height: 80px;
-	border-left: 7px solid brown;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin-bottom: 20px;
-	transition: all 300ms ease-out;
-	cursor: pointer;
+  height: 80px;
+  border-left: 7px solid brown;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  transition: all 300ms ease-out;
+  cursor: pointer;
 }
 
 .pat:hover {
-	transform: scale(1.03);
-	background-color: rgb(235, 234, 234);
-	border-radius: 0px 10px 10px 0px;
+  transform: scale(1.03);
+  background-color: rgb(235, 234, 234);
+  border-radius: 0px 10px 10px 0px;
 }
 
 .pat > p {
-	margin-left: 40px;
-	color: black;
-	font-size: 30px;
-	font-weight: bold;
+  margin-left: 40px;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .pat > h1 {
-	font-size: 30px;
-	font-weight: bold;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .arrow {
-	height: 30px;
-	width: 30px;
+  height: 30px;
+  width: 30px;
 }
 
 .PatronizeUsCardHolder {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 520px 520px;
+  shape-outside: 10px;
+  grid-template-columns: 30% 30% 30%;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .patronizeUsCard {
-	width: 320px;
-	/* height: 400px;
-	 */
-	height: auto;
-	background-color: white;
-	border-radius: 10px;
-	display: flex;
-	flex-direction: column;
-	margin: 10px;
-	transition: all 300ms ease-out;
+  width: auto;
+  /* height: 400px;*/
+  height: auto;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+  transition: all 300ms ease-out;
+  border-radius: 40px;
+  padding-bottom: 20px;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.4);
 }
 
 .patronizeUsCard:hover {
-	transform: scale(1.03);
-	box-shadow: 5px 5px 5px 5px rgb(211, 211, 211);
+  transform: scale(1.03);
+  box-shadow: 5px 5px 5px 5px rgb(211, 211, 211);
 }
 
 .patronizeUsCard > img {
-	width: 100%;
-	height: 280px;
-	border-radius: 10px 10px 0px 0px;
-	background-color: rgb(119, 117, 117);
-	object-fit: cover;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: rgb(119, 117, 117);
+  object-fit: cover;
+  border-radius: 40px;
 }
 
-.patronizeUsCard > h2 {
-	text-align: flex-start;
-	margin-left: 20px;
-	font-weight: bold;
-	font-family: Poppins;
-	line-height: -20px;
+.patronizeUsCard > h1 {
+  text-align: flex-start;
+  margin-left: 10%;
+  font-weight: bolder;
+  line-height: -20px;
+  font-family: Poppins;
 }
 
-.patronizeUsCard > h3 {
-	text-align: flex-start;
-	margin-left: 20px;
-	font-weight: normal;
-	font-family: Poppins;
+.patDiv {
+  margin-left: 10%;
+  color: #86898c;
+  font-family: Poppins;
 }

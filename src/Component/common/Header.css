@@ -1,7 +1,7 @@
 .HeaderHeroImage {
   width: 100%;
-  height: 500px;
-  background-image: url("../images/car\ dark\ them\ yes.jpg");
+  height: 700px;
+  background-image: url('../images/car\ dark\ them\ yes.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,10 +11,19 @@
   flex-direction: column;
 }
 
+.BlurHeader {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: bottom;
+  align-items: center;
+  justify-content: center;
+}
+
 .HeaderHeroImage2 {
   width: 100%;
   height: 500px;
-  background-image: url("../images/tolling.jpg");
+  background-image: url('../images/tolling.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,37 +59,53 @@
 }
 
 .navs > p {
-  color: white;
+  color: #bbbbbb;
   font-size: 20px;
 }
 
 .Transol {
   width: 60%;
+  height: auto;
 }
 
-.Transol > h1 {
-  font-size: 60px;
-  font-family: Poppins;
-  color: white;
-  margin-top: -30px;
+.headText {
+  font-size: 160px;
+  font-weight: 600;
+  font-family: perpetua;
+  color: #bbbbbb;
+  margin-top: -25px;
 }
 
-.Transol > h3 {
-  font-size: 20px;
-  font-family: Poppins;
-  color: white;
-  margin-top: -65px;
+.headMotto {
+  font-size: 30px;
+  font-family: pepertua;
+  font-weight: 500;
+  color: #bbbbbb;
+  margin-top: -240px;
 }
 
 .headerOptions {
   display: flex;
   width: 40%;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.headerOptions > h2 {
-  color: white;
+.headerOptions > p {
+  color: #bbbbbb;
   padding-top: 100px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 22px;
+}
+.IconButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.IconButton > p {
+  color: #bbbbbb;
+  font-size: 16px;
+  font-family: pepertua;
 }

@@ -1,9 +1,9 @@
-import React from "react";
-import { useHistory } from "react-router-dom";
-import "./Header.css";
-import IconButton from "@material-ui/core/IconButton";
-import AppIcon from "@material-ui/icons/Apps";
-import CloseIcon from "@material-ui/icons/Close";
+import React from 'react';
+import { useHistory } from 'react-router-dom';
+import './Header.css';
+import IconButton from '@material-ui/core/IconButton';
+import Power from '@material-ui/icons/PowerSettingsNew';
+import MenuIcon from '@material-ui/icons/Menu';
 // import styled from "styled-component";
 
 function Header({
@@ -20,48 +20,48 @@ function Header({
       className="HeaderHeroImage"
       // style={{ backgroundImage: backgroundImage }}
     >
-      <div className="navs">
-        <IconButton>
-          <CloseIcon style={{ color: "white", size: "large" }} />
-        </IconButton>
-        <IconButton>
-          <AppIcon style={{ color: "white", size: "large" }} />
-        </IconButton>
-      </div>
-      <center className="Transol">
-        <h1>{name}</h1>
-        <br />
-        <h3>{HeadStory}</h3>
-      </center>
-      <br />
+      <div className="BlurHeader">
+        <div className="navs">
+          <IconButton>
+            <MenuIcon style={{ color: 'white', size: 'large' }} />
+          </IconButton>
+          <IconButton className="IconButton">
+            <Power style={{ color: 'white', size: 'large' }} />
+            <p>Logout</p>
+          </IconButton>
+        </div>
+        <center className="Transol">
+          <p className="headText">{name}</p>
+          <p className="headMotto">{HeadStory}</p>
+        </center>
+        <div className="headerOptions">
+          <p
+            style={{ fontSize: 'HomeFont' }}
+            onClick={() => {
+              hist.push('/homepage');
+            }}
+          >
+            Home
+          </p>
 
-      <div className="headerOptions">
-        <h2
-          style={{ fontSize: "HomeFont" }}
-          onClick={() => {
-            hist.push("/homepage");
-          }}
-        >
-          Home
-        </h2>
+          <p
+            style={{ fontSize: 'ProfileFont' }}
+            onClick={() => {
+              hist.push('/profile');
+            }}
+          >
+            Profile
+          </p>
 
-        <h2
-          style={{ fontSize: "ProfileFont" }}
-          onClick={() => {
-            hist.push("/profile");
-          }}
-        >
-          Profile
-        </h2>
-
-        <h2
-          style={{ fontSize: "CarBrandsFont" }}
-          onClick={() => {
-            hist.push("/carbrand");
-          }}
-        >
-          Car Brands
-        </h2>
+          <p
+            style={{ fontSize: 'CarBrandsFont' }}
+            onClick={() => {
+              hist.push('/carbrand');
+            }}
+          >
+            Car Brands
+          </p>
+        </div>
       </div>
     </div>
   );
