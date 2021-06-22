@@ -32,18 +32,21 @@
 
 .HomeTrayContainer {
   width: 100%;
-  height: 80px;
-  background-color: rgb(201, 201, 201);
+  height: 120px;
+  background-color: #f3f3f3;
   border-radius: 10px;
   display: flex;
   align-items: center;
   margin-bottom: 15px;
   transition: all 300ms ease-out;
   cursor: pointer;
+  box-shadow: 3px 3px 6px 5px rgba(0, 0, 0, 0.3);
+  border: 3px solid #707070;
+  border-radius: 16px;
 }
 
 .HomeTrayContainer:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
   background-color: rgb(235, 234, 234);
 }
 
@@ -55,9 +58,9 @@
 
 .HomeTrayContainer > p {
   margin-left: 40px;
-
-  font-size: 25px;
+  font-size: 35px;
   font-weight: normal;
+  margin-top: 25px;
 }
 
 .HomeTrayContainer > img {
@@ -67,27 +70,33 @@
 }
 
 .pat {
-  height: 80px;
+  height: 75px;
   border-left: 7px solid brown;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 0.5%;
+  margin-right: 2%;
   transition: all 300ms ease-out;
   cursor: pointer;
+  padding: 1.5%;
 }
 
-.pat:hover {
+/* .pat:hover {
   transform: scale(1.03);
   background-color: rgb(235, 234, 234);
   border-radius: 0px 10px 10px 0px;
-}
+} */
 
 .pat > p {
   margin-left: 40px;
-  color: black;
-  font-size: 30px;
+  color: #111419;
+  font-size: 45px;
   font-weight: bold;
+  margin-top: 45px;
+  font-family: pepertua;
 }
 
 .pat > h1 {
@@ -96,8 +105,8 @@
 }
 
 .arrow {
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 25px;
 }
 
 .PatronizeUsCardHolder {

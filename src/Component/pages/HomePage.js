@@ -7,7 +7,7 @@ import repair from '../images/spanner.png';
 import brand from '../images/car.png';
 import tag from '../images/tag.png';
 import NearestOffice from '../common/NearestOffice';
-import forward from '../images/forward_icon-removebg-preview (1).png';
+import forward from '../images/arrow.png';
 import HeadLight from '../images/Headlight.jpeg';
 import brake_1 from '../images/brake_1.png';
 import engine from '../images/engine.jpg';
@@ -24,7 +24,6 @@ function HomePage() {
       <div className="HomeTrayContainer">
         <h1> |</h1>
         <p>{title}</p>
-        <img src={forward} />
       </div>
     );
   };
@@ -85,7 +84,11 @@ function HomePage() {
         />
 
         <div className="HomePageTrayHolder">
-          <h2>Our services</h2>
+          {' '}
+          <div className="pat">
+            <p>Our services</p>
+            <img src={forward} className="arrow" />
+          </div>
           <div
             onClick={() => {
               hist.push('/tollservices');
@@ -104,7 +107,7 @@ function HomePage() {
             <HomePageTray title="Order repair specialist" color="#5CCE64" />
           </div>
           <div>
-            <HomePageTray title="Toll services" color="#509BB7" />
+            <HomePageTray title="Hire tansport conveyors" color="#509BB7" />
           </div>
           <div
             className="pat"

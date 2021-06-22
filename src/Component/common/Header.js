@@ -25,10 +25,12 @@ function Header({
           <IconButton>
             <MenuIcon style={{ color: 'white', size: 'large' }} />
           </IconButton>
-          <IconButton className="IconButton">
-            <Power style={{ color: 'white', size: 'large' }} />
+          <div className="logoutButton">
+            <IconButton className="IconButton">
+              <Power style={{ color: 'white', size: 'large' }} />
+            </IconButton>
             <p>Logout</p>
-          </IconButton>
+          </div>
         </div>
         <center className="Transol">
           <p className="headText">{name}</p>
