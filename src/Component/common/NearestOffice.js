@@ -6,7 +6,7 @@ function NearestOffice({ onClick }) {
   return (
     <div className="NearestOfice" onClick={onClick}>
       <div className="TextPart">
-        <p className="headingText">Transol Ofice</p>
+        <h1 className="headingText">Transol Ofice</h1>
         <p>
           Visit the nearest Transol offices to get face to face contact and
           acquisition of purchases by pickup

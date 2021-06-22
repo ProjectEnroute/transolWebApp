@@ -13,12 +13,21 @@
   padding: 10px;
 }
 
-.TextPart > p {
-  color: white;
+.TextPart > h1 {
+  color: #bbbbbb;
   font-family: Poppins;
-  margin-left: 20px;
+  margin-left: 6%;
   width: 60%;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.TextPart > p {
+  color: #bbbbbb;
+  font-family: Poppins;
+  margin-left: 6%;
+  width: 60%;
+  font-size: 25px;
 }
 
 .ImageMap {
