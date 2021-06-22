@@ -1,7 +1,7 @@
 .HeaderHeroImage {
   width: 100%;
   height: 700px;
-  background-image: url('../images/car\ dark\ them\ yes.jpg');
+  background-image: url('../images/imageFolder/headerTheme.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +23,7 @@
 .HeaderHeroImage2 {
   width: 100%;
   height: 500px;
-  background-image: url('../images/tolling.jpg');
+  background-image: url('../images/imageFolder/tolling.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
