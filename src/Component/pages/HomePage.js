@@ -22,7 +22,7 @@ function HomePage() {
   const HomePageTray = ({ color, title }) => {
     return (
       <div className="HomeTrayContainer">
-        <h1> |</h1>
+        <h1 style={{ color: color }}> |</h1>
         <p>{title}</p>
       </div>
     );
