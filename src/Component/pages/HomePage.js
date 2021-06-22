@@ -3,9 +3,9 @@ import { Link, useHistory } from 'react-router-dom';
 import Header from '../common/Header';
 import HomeCard from '../common/HomeCard';
 import './HomePage.css';
-import repair from '../images/spanner-removebg-preview.png';
-import brand from '../images/car_icon-removebg-preview.png';
-import tag from '../images/tag-removebg-preview.png';
+import repair from '../images/spanner.png';
+import brand from '../images/car.png';
+import tag from '../images/tag.png';
 import NearestOffice from '../common/NearestOffice';
 import forward from '../images/forward_icon-removebg-preview (1).png';
 import HeadLight from '../images/Headlight.jpeg';
@@ -91,23 +91,20 @@ function HomePage() {
               hist.push('/tollservices');
             }}
           >
-            <HomePageTray title="Toll services" color="red" />
+            <HomePageTray title="Toll services" color="#D64A4A" />
           </div>
           <div
             onClick={() => {
               hist.push('/hire');
             }}
           >
-            <HomePageTray title="Hire a ranger" color="red" />
+            <HomePageTray title="Hire a ranger" color="#C5B358" />
           </div>
           <div>
-            <HomePageTray title="Order repair specialist" color="red" />
+            <HomePageTray title="Order repair specialist" color="#5CCE64" />
           </div>
           <div>
-            <HomePageTray title="Toll services" color="red" />
-          </div>
-          <div>
-            <HomePageTray title="Hire transport conveyors" color="red" />
+            <HomePageTray title="Toll services" color="#509BB7" />
           </div>
           <div
             className="pat"

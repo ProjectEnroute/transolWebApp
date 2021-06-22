@@ -1,12 +1,11 @@
 .HomeCardContainer {
   background-image: linear-gradient(to right, #363940, #20242b);
   border-radius: 35px;
-  border: 2px solid #707070;
+  border: 1.5px solid #707070;
   height: 270px;
   width: 100%;
   margin: 8px;
   transition: all 300ms ease-out;
-  opacity: 100%;
   box-shadow: 5px 5px 50px 5px rgba(0, 0, 0, 0.4);
 }
 
@@ -23,15 +22,18 @@
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
-  align-items: center;
+  align-items: flex-start;
+  padding: 4.5%;
 }
 .HomeCardContent > h1 {
   color: #bbbbbb;
   font-family: Poppins;
+  font-weight: 600;
+  font-size: 45px;
 }
 
 .HomeCardContentBody {
-  width: 90%;
+  width: 96%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -41,11 +43,13 @@
   width: 70%;
   color: #bbbbbb;
   font-family: Poppins;
+  font-weight: 400;
+  font-size: 29px;
 }
 
 .HomeCardContentBody > img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
+  width: 85px;
+  height: 60px;
+  object-fit: fill;
   outline: none;
 }
