@@ -127,12 +127,7 @@ function HomePage() {
           {/* ------------------------ */}
 
           {/* Patronize us section title */}
-          <div
-            className="pat"
-            onClick={() => {
-              hist.push('/ourservices');
-            }}
-          >
+          <div className="pat">
             <p>Patronize us</p>
             <img src={forward} className="arrow" />
           </div>
