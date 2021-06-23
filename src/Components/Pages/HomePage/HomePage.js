@@ -47,6 +47,7 @@ function HomePage() {
 
   return (
     <div className="HomePage">
+      {/* Header component */}
       <center>
         <Header
           name="Transol"
@@ -55,7 +56,10 @@ function HomePage() {
           backgroundImage=" 'url('  + { homebackgroundImage } + ' )' "
         />
       </center>
+
+      {/* Home page card component */}
       <div className="HomePageCard">
+        {/* Home Card 1 */}
         <div>
           <HomeCard
             title="Repairs"
@@ -64,6 +68,7 @@ function HomePage() {
           />
         </div>
 
+        {/* Home Card 2 */}
         <div>
           <HomeCard
             title="Car Brands"
@@ -71,6 +76,8 @@ function HomePage() {
             src={brand}
           />
         </div>
+
+        {/* Home Card 3 */}
         <div>
           <HomeCard
             title="Subscription"
@@ -79,6 +86,8 @@ function HomePage() {
           />
         </div>
       </div>
+
+      {/* Nearest office component */}
       <div className="HomePageNearestOffice">
         <NearestOffice
           onClick={() => {
@@ -86,12 +95,15 @@ function HomePage() {
           }}
         />
 
+        {/* Home page tray component */}
         <div className="HomePageTrayHolder">
-          {' '}
+          {/* Our services ection title */}
           <div className="pat">
             <p>Our services</p>
             <img src={forward} className="arrow" />
           </div>
+
+          {/* ----- Tray list ----- */}
           <div
             onClick={() => {
               hist.push('/tollservices');
@@ -112,6 +124,9 @@ function HomePage() {
           <div>
             <HomePageTray title="Hire tansport conveyors" color="#509BB7" />
           </div>
+          {/* ------------------------ */}
+
+          {/* Patronize us section title */}
           <div
             className="pat"
             onClick={() => {
@@ -121,6 +136,8 @@ function HomePage() {
             <p>Patronize us</p>
             <img src={forward} className="arrow" />
           </div>
+
+          {/* Patronize us card component grid */}
           <div className="PatronizeUsCardHolder">
             <PatronizeUsCard
               title="Head Light"
