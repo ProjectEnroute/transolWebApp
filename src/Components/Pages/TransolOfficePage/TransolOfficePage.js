@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import "./TransolOffice.css";
-import GoogleMapReact from "google-map-react";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
-import InstagramIcon from "@material-ui/icons/Instagram";
+import React, { Component } from 'react';
+import './TransolOfficePage.css';
+import GoogleMapReact from 'google-map-react';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import MailOutlineIcon from '@material-ui/icons/MailOutline';
+import InstagramIcon from '@material-ui/icons/Instagram';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -19,7 +19,7 @@ class TransolOffice extends Component {
     return (
       <div>
         <center>
-          <div style={{ height: "500px", width: "80%" }}>
+          <div style={{ height: '500px', width: '80%' }}>
             <GoogleMapReact
               // bootstrapURLKeys={{ key: /* YOUR KEY HERE */ }}
               defaultCenter={this.props.center}
@@ -50,11 +50,11 @@ class TransolOffice extends Component {
               <FacebookIcon size="small" />
             </h1>
             <h1>
-              {" "}
+              {' '}
               <MailOutlineIcon size="small" />
             </h1>
             <h1>
-              <InstagramIcon size='small"' />{" "}
+              <InstagramIcon size='small"' />{' '}
             </h1>
           </div>
         </div>

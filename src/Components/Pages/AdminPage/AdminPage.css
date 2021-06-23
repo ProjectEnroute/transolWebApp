@@ -1,7 +1,7 @@
 .AdminHeader {
   width: 100%;
   height: 50px;
-  background-image: url('../images/imageFolder/headerTheme.jpg');
+  background-image: url('../../Images/imageFolder/headerTheme.jpg');
   align-items: center;
   display: flex;
   justify-content: space-evenly;

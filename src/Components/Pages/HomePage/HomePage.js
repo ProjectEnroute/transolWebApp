@@ -1,20 +1,23 @@
 import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import Header from '../common/Header';
-import HomeCard from '../common/HomeCard';
 import './HomePage.css';
-import NearestOffice from '../common/NearestOffice';
-import repair from '../images/iconFolder/spanner.png';
-import brand from '../images/iconFolder/car.png';
-import tag from '../images/iconFolder/tag.png';
-import forward from '../images/iconFolder/arrow.png';
-import HeadLight from '../images/imageFolder/Headlight.jpeg';
-import brake_1 from '../images/imageFolder/brake_1.png';
-import engine from '../images/imageFolder/engine.jpg';
-import steering from '../images/imageFolder/steering.jpg';
-import wheel from '../images/imageFolder/wheel.jpg';
-import wiring from '../images/imageFolder/wiring.jpg';
-import homebackgroundImage from '../images/imageFolder/headerTheme.jpg';
+// Component imports -------------------------------------------------
+import Header from '../../Common/Header/Header';
+import HomeCard from '../../Common/HomeCard/HomeCard';
+import NearestOffice from '../../Common/NearestOffice/NearestOffice';
+// Icon imports --------------------------------------------------------
+import repair from '../../Images/iconFolder/spanner.png';
+import brand from '../../Images/iconFolder/car.png';
+import tag from '../../Images/iconFolder/tag.png';
+import forward from '../../Images/iconFolder/arrow.png';
+// Image  imports ------------------------------------------------------
+import HeadLight from '../../Images/imageFolder/Headlight.jpeg';
+import brake_1 from '../../Images/imageFolder/brake_1.png';
+import engine from '../../Images/imageFolder/engine.jpg';
+import steering from '../../Images/imageFolder/steering.jpg';
+import wheel from '../../Images/imageFolder/wheel.jpg';
+import wiring from '../../Images/imageFolder/wiring.jpg';
+import homebackgroundImage from '../../Images/imageFolder/headerTheme.jpg';
 
 function HomePage() {
   const hist = useHistory();

@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import Header from "../common/Header.js";
-import "./TollServices.css";
+import React, { Component } from 'react';
+import Header from '../../Common/Header/Header';
+import './TollServicesPage.css';
 
-import GoogleMapReact from "google-map-react";
+import GoogleMapReact from 'google-map-react';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -39,7 +39,7 @@ class TollService extends Component {
           </div>
         </center>
         <center>
-          <div style={{ height: "100vh", width: "100%" }}>
+          <div style={{ height: '100vh', width: '100%' }}>
             <GoogleMapReact
               // bootstrapURLKeys={{ key: /* YOUR KEY HERE */ }}
               defaultCenter={this.props.center}

@@ -5,6 +5,7 @@
   height: 270px;
   width: 100%;
   margin: 8px;
+  cursor: pointer;
   transition: all 300ms ease-out;
   box-shadow: 5px 5px 50px 5px rgba(0, 0, 0, 0.4);
 }

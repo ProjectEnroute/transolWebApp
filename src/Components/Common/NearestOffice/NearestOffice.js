@@ -1,6 +1,6 @@
 import React from 'react';
 import './NearestOffice.css';
-import location from '../images/imageFolder/location.jpg';
+import location from '../../Images/imageFolder/location.jpg';
 
 function NearestOffice({ onClick }) {
   return (

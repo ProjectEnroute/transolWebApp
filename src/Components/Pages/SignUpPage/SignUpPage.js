@@ -1,28 +1,28 @@
-import React, { useState, useEffect } from "react";
-import { Link, useHistory } from "react-router-dom";
-import app from "../firebase";
-import "./SignUpPage.css";
-import firebase from "firebase";
+import React, { useState, useEffect } from 'react';
+import { Link, useHistory } from 'react-router-dom';
+import app from '../../firebase';
+import './SignUpPage.css';
+import firebase from 'firebase';
 
 const store = app.storage();
 
 function SignUpPage() {
   const hist = useHistory();
   const [flip, setFlip] = useState(true);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [comfirmPassword, setComfirmPassword] = useState("");
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [comfirmPassword, setComfirmPassword] = useState('');
 
   const Flipping = () => {
     setFlip(!flip);
   };
 
-  const newUser = app.firestore().collection("users");
+  const newUser = app.firestore().collection('users');
 
   const LoginPage = async () => {
     await app.auth().signInWithEmailAndPassword(email, password);
-    hist("/");
+    hist('/');
   };
 
   const SignUp = async () => {
@@ -34,7 +34,7 @@ function SignUpPage() {
     //   name,
     //   email,
     // });
-    await hist.push("/");
+    await hist.push('/');
   };
 
   const SignGoogle = () => {
@@ -66,12 +66,12 @@ function SignUpPage() {
               LoginPage();
             }}
           >
-            {" "}
+            {' '}
             Login
           </button>
           <button onClick={SignGoogle()}> Sign in With Google </button>
           <p>
-            don't have an account{" "}
+            don't have an account{' '}
             <Link onClick={Flipping}>Create an Account </Link>
           </p>
         </center>

@@ -1,6 +1,6 @@
-import React from "react";
-import Header from "../common/Header";
-import "./HireRanger.css";
+import React from 'react';
+import Header from '../../Common/Header/Header';
+import './HireRangerPage.css';
 
 function HireRanger() {
   return (

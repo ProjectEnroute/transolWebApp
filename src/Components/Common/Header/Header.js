@@ -4,6 +4,7 @@ import './Header.css';
 import IconButton from '@material-ui/core/IconButton';
 import Power from '@material-ui/icons/PowerSettingsNew';
 import MenuIcon from '@material-ui/icons/Menu';
+import { image } from 'faker';
 // import styled from "styled-component";
 
 function Header({
@@ -18,6 +19,7 @@ function Header({
   return (
     <div
       className="HeaderHeroImage"
+      style={{ backgroundImage: `URL('${backgroundImage}')` }}
       // style={{ backgroundImage: backgroundImage }}
     >
       <div className="BlurHeader">
