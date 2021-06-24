@@ -34,6 +34,7 @@
 
 #payments_tab .fleet:hover {
   color: #a29345;
+  text-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
 }
 
 #payments_tab .orders {
@@ -46,6 +47,7 @@
 
 #payments_tab .orders:hover {
   color: #538e57;
+  text-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
 }
 
 #payments_tab .ongoing {
@@ -58,8 +60,62 @@
 
 #payments_tab .ongoing:hover {
   color: #3d7a91;
+  text-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
 }
 
 /* My fleet tab */
+#fleet_tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#fleet_tab .payment {
+  cursor: pointer;
+  color: #000;
+  font-size: 300%;
+  font-weight: 600;
+  font-family: pepetua;
+}
+
+#fleet_tab .payment:hover {
+  color: #773333;
+  text-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+#fleet_tab .fleet {
+  color: #a29345;
+  font-size: 400%;
+  font-size: 300%;
+  cursor: pointer;
+  font-weight: bolder;
+  margin-top: -5.5%;
+  font-family: pepetua;
+}
+
+#fleet_tab .orders {
+  color: #000;
+  font-size: 300%;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: pepetua;
+}
+
+#fleet_tab .orders:hover {
+  color: #538e57;
+  text-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+#fleet_tab .ongoing {
+  color: #000;
+  font-size: 300%;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: pepetua;
+}
+
+#fleet_tab .ongoing:hover {
+  color: #3d7a91;
+  text-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+}
 /* My orders tab */
 /* Ongoing tab */
