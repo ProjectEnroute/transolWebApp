@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-left: 5.5%;
-  padding-right: 5.5%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /* Payment tab */
@@ -15,11 +15,29 @@
   justify-content: space-between;
 }
 
+/* Section bars */
+.visible_bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 35px;
+  margin-top: -25%;
+  margin-bottom: 10%;
+}
+
+.hidden_bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 35px;
+  margin-top: -25%;
+  opacity: 0;
+  margin-bottom: 10%;
+}
+
 #payments_tab .payment {
-  font-size: 400%;
-  color: rgb(119, 51, 51);
-  margin-top: -5.5%;
+  font-size: 350%;
+  color: #773333;
   cursor: pointer;
+  margin-top: -5.5%;
   font-weight: bolder;
   font-family: pepetua;
   text-shadow: 10px 10px 20px rgba(119, 51, 51, 0.7);
@@ -27,10 +45,11 @@
 
 #payments_tab .fleet {
   color: #000;
-  font-size: 300%;
+  font-size: 280%;
   cursor: pointer;
   font-weight: 600;
   font-family: pepetua;
+  transition: all 300ms ease-in-out;
 }
 
 #payments_tab .fleet:hover {
@@ -40,10 +59,11 @@
 
 #payments_tab .orders {
   color: #000;
-  font-size: 300%;
+  font-size: 280%;
   cursor: pointer;
   font-weight: 600;
   font-family: pepetua;
+  transition: all 300ms ease-in-out;
 }
 
 #payments_tab .orders:hover {
@@ -53,10 +73,11 @@
 
 #payments_tab .ongoing {
   color: #000;
-  font-size: 300%;
+  font-size: 280%;
   cursor: pointer;
   font-weight: 600;
   font-family: pepetua;
+  transition: all 300ms ease-in-out;
 }
 
 #payments_tab .ongoing:hover {
@@ -70,12 +91,14 @@
   align-items: center;
   justify-content: space-between;
 }
+
 #fleet_tab .payment {
   cursor: pointer;
   color: #000;
-  font-size: 300%;
+  font-size: 280%;
   font-weight: 600;
   font-family: pepetua;
+  transition: all 300ms ease-in-out;
 }
 
 #fleet_tab .payment:hover {
@@ -85,8 +108,8 @@
 
 #fleet_tab .fleet {
   color: #a29345;
-  font-size: 400%;
-  font-size: 300%;
+  font-size: 350%;
+  font-size: 280%;
   cursor: pointer;
   font-weight: bolder;
   margin-top: -5.5%;
@@ -96,10 +119,11 @@
 
 #fleet_tab .orders {
   color: #000;
-  font-size: 300%;
+  font-size: 280%;
   cursor: pointer;
   font-weight: 600;
   font-family: pepetua;
+  transition: all 300ms ease-in-out;
 }
 
 #fleet_tab .orders:hover {
@@ -109,10 +133,11 @@
 
 #fleet_tab .ongoing {
   color: #000;
-  font-size: 300%;
+  font-size: 280%;
   cursor: pointer;
   font-weight: 600;
   font-family: pepetua;
+  transition: all 300ms ease-in-out;
 }
 
 #fleet_tab .ongoing:hover {
@@ -129,9 +154,10 @@
 #orders_tab .payment {
   cursor: pointer;
   color: #000;
-  font-size: 300%;
+  font-size: 280%;
   font-weight: 600;
   font-family: pepetua;
+  transition: all 300ms ease-in-out;
 }
 
 #orders_tab .payment:hover {
@@ -140,11 +166,12 @@
 }
 
 #orders_tab .fleet {
-  font-size: 300%;
+  font-size: 280%;
   cursor: pointer;
   color: #000;
   font-weight: 600;
   font-family: pepetua;
+  transition: all 300ms ease-in-out;
 }
 
 #orders_tab .fleet:hover {
@@ -155,7 +182,7 @@
 #orders_tab .orders {
   color: #538d57;
   cursor: pointer;
-  font-size: 400%;
+  font-size: 350%;
   font-weight: bolder;
   margin-top: -5.5%;
   font-family: pepetua;
@@ -164,10 +191,11 @@
 
 #orders_tab .ongoing {
   color: #000;
-  font-size: 300%;
+  font-size: 280%;
   cursor: pointer;
   font-weight: 600;
   font-family: pepetua;
+  transition: all 300ms ease-in-out;
 }
 
 #orders_tab .ongoing:hover {
@@ -184,9 +212,10 @@
 #ongoing_tab .payment {
   cursor: pointer;
   color: #000;
-  font-size: 300%;
+  font-size: 280%;
   font-weight: 600;
   font-family: pepetua;
+  transition: all 300ms ease-in-out;
 }
 
 #ongoing_tab .payment:hover {
@@ -195,11 +224,12 @@
 }
 
 #ongoing_tab .fleet {
-  font-size: 300%;
+  font-size: 280%;
   cursor: pointer;
   color: #000;
   font-weight: 600;
   font-family: pepetua;
+  transition: all 300ms ease-in-out;
 }
 
 #ongoing_tab .fleet:hover {
@@ -210,9 +240,10 @@
 #ongoing_tab .orders {
   cursor: pointer;
   color: #000;
-  font-size: 300%;
+  font-size: 280%;
   font-weight: 600;
   font-family: pepetua;
+  transition: all 300ms ease-in-out;
 }
 
 #ongoing_tab .orders:hover {
@@ -223,7 +254,7 @@
 #ongoing_tab .ongoing {
   color: #3d7a91;
   cursor: pointer;
-  font-size: 400%;
+  font-size: 350%;
   font-weight: bolder;
   margin-top: -5.5%;
   font-family: pepetua;

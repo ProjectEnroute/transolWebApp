@@ -8,43 +8,72 @@ function ProfilePageTabView() {
   orders_tab --- 
   ongoing_tab --- 
   */
-  const [Tab, setTab] = useState('orders_tab');
+  const [Tab, setTab] = useState('fleet_tab');
+  const [Bar_1, setBar_1] = useState('');
+  const [Bar_2, setBar_2] = useState('visible_bar');
+  const [Bar_3, setBar_3] = useState('');
+  const [Bar_4, setBar_4] = useState('');
+  const [BarColor, setBarColor] = useState('#a29345');
 
   // Create on click for payment tab
   const Tab_1 = () => {
     setTab('payments_tab');
+    setBarColor('#773333');
+    setBar_1('visible_bar');
+    setBar_2('hidden_bar');
+    setBar_3('hidden_bar');
+    setBar_4('hidden_bar');
   };
 
   //  Create on click for fleet tab
   const Tab_2 = () => {
     setTab('fleet_tab');
+    setBarColor('#a29345');
+    setBar_1('hidden_bar');
+    setBar_2('visible_bar');
+    setBar_3('hidden_bar');
+    setBar_4('hidden_bar');
   };
 
   //  Create on click for orders tab
   const Tab_3 = () => {
     setTab('orders_tab');
+    setBarColor('#538e57');
+    setBar_1('hidden_bar');
+    setBar_2('hidden_bar');
+    setBar_3('visible_bar');
+    setBar_4('hidden_bar');
   };
 
-  //  Create on click for ongoingtab
+  //  Create on click for ongoing tab
   const Tab_4 = () => {
     setTab('ongoing_tab');
+    setBarColor('#3d7a91');
+    setBar_1('hidden_bar');
+    setBar_2('hidden_bar');
+    setBar_3('hidden_bar');
+    setBar_4('visible_bar');
   };
 
   return (
     <div className="tabViewContainer">
       <div id={Tab}>
-        <p className="payment" onClick={Tab_1}>
-          Payment
-        </p>
-        <p className="fleet" onClick={Tab_2}>
-          My Fleet
-        </p>
-        <p className="orders" onClick={Tab_3}>
-          My Orders
-        </p>
-        <p className="ongoing" onClick={Tab_4}>
-          Ongoing
-        </p>
+        <div className="payment" onClick={Tab_1}>
+          <p>Payment</p>
+          <div className={Bar_1} style={{ backgroundColor: `${BarColor}` }} />
+        </div>
+        <div className="fleet" onClick={Tab_2}>
+          <p>My Fleet</p>
+          <div className={Bar_2} style={{ backgroundColor: `${BarColor}` }} />
+        </div>
+        <div className="orders" onClick={Tab_3}>
+          <p>My Orders</p>
+          <div className={Bar_3} style={{ backgroundColor: `${BarColor}` }} />
+        </div>
+        <div className="ongoing" onClick={Tab_4}>
+          <p>Ongoing</p>
+          <div className={Bar_4} style={{ backgroundColor: `${BarColor}` }} />
+        </div>
       </div>
     </div>
   );
