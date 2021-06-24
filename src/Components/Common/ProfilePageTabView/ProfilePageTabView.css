@@ -17,11 +17,12 @@
 
 #payments_tab .payment {
   font-size: 400%;
-  color: #773333;
+  color: rgb(119, 51, 51);
   margin-top: -5.5%;
   cursor: pointer;
   font-weight: bolder;
   font-family: pepetua;
+  text-shadow: 10px 10px 20px rgba(119, 51, 51, 0.7);
 }
 
 #payments_tab .fleet {
@@ -34,7 +35,7 @@
 
 #payments_tab .fleet:hover {
   color: #a29345;
-  text-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 #payments_tab .orders {
@@ -47,7 +48,7 @@
 
 #payments_tab .orders:hover {
   color: #538e57;
-  text-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 #payments_tab .ongoing {
@@ -60,7 +61,7 @@
 
 #payments_tab .ongoing:hover {
   color: #3d7a91;
-  text-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 /* My fleet tab */
@@ -79,7 +80,7 @@
 
 #fleet_tab .payment:hover {
   color: #773333;
-  text-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 #fleet_tab .fleet {
@@ -90,6 +91,7 @@
   font-weight: bolder;
   margin-top: -5.5%;
   font-family: pepetua;
+  text-shadow: 10px 10px 20px rgba(162, 147, 69, 0.7);
 }
 
 #fleet_tab .orders {
@@ -102,7 +104,7 @@
 
 #fleet_tab .orders:hover {
   color: #538e57;
-  text-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 #fleet_tab .ongoing {
@@ -115,7 +117,116 @@
 
 #fleet_tab .ongoing:hover {
   color: #3d7a91;
-  text-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
+
 /* My orders tab */
+#orders_tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#orders_tab .payment {
+  cursor: pointer;
+  color: #000;
+  font-size: 300%;
+  font-weight: 600;
+  font-family: pepetua;
+}
+
+#orders_tab .payment:hover {
+  color: #773333;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#orders_tab .fleet {
+  font-size: 300%;
+  cursor: pointer;
+  color: #000;
+  font-weight: 600;
+  font-family: pepetua;
+}
+
+#orders_tab .fleet:hover {
+  color: #a29345;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#orders_tab .orders {
+  color: #538d57;
+  cursor: pointer;
+  font-size: 400%;
+  font-weight: bolder;
+  margin-top: -5.5%;
+  font-family: pepetua;
+  text-shadow: 10px 10px 20px rgba(83, 141, 87, 0.7);
+}
+
+#orders_tab .ongoing {
+  color: #000;
+  font-size: 300%;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: pepetua;
+}
+
+#orders_tab .ongoing:hover {
+  color: #3d7a91;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
 /* Ongoing tab */
+#ongoing_tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#ongoing_tab .payment {
+  cursor: pointer;
+  color: #000;
+  font-size: 300%;
+  font-weight: 600;
+  font-family: pepetua;
+}
+
+#ongoing_tab .payment:hover {
+  color: #773333;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#ongoing_tab .fleet {
+  font-size: 300%;
+  cursor: pointer;
+  color: #000;
+  font-weight: 600;
+  font-family: pepetua;
+}
+
+#ongoing_tab .fleet:hover {
+  color: #a19145;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+#ongoing_tab .orders {
+  cursor: pointer;
+  color: #000;
+  font-size: 300%;
+  font-weight: 600;
+  font-family: pepetua;
+}
+
+#ongoing_tab .orders:hover {
+  color: rgb(83, 141, 87);
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+#ongoing_tab .ongoing {
+  color: #3d7a91;
+  cursor: pointer;
+  font-size: 400%;
+  font-weight: bolder;
+  margin-top: -5.5%;
+  font-family: pepetua;
+  text-shadow: 10px 10px 20px rgba(61, 122, 145, 0.7);
+  background-color: #0000;
+}
