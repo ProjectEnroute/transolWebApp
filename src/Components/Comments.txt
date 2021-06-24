@@ -1,3 +1,5 @@
 * All size declaraations should be done in percentages and not exact pixel values for scalability purposes* 
 
 * Every new component attachment should have a comment to state so *
+
+* Component props should be entered through array mapping *

@@ -3,6 +3,7 @@ import './ProfilePage.css';
 //  Component imports --------------------------------
 import Header from '../../Common/Header/Header';
 import TabView from '../../Common/ProfilePageTabView/ProfilePageTabView';
+import PaymentTab from '../../Common/ProfileTabs/PaymentTab/PaymentTab';
 // Image imports -------------------------------------
 import ProfilePicture from '../../Images/imageFolder/profilePictureMock.jpg';
 
@@ -29,6 +30,9 @@ function Profile() {
 
       <center>
         <TabView />
+      </center>
+      <center>
+        <PaymentTab />
       </center>
     </div>
   );
