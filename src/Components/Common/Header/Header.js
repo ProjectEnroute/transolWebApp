@@ -7,15 +7,16 @@ import MenuIcon from '@material-ui/icons/Menu';
 import { image } from 'faker';
 // import styled from "styled-component";
 
-function Header({
-  HomeFont,
-  ProfileFont,
-  CarBrandsFont,
-  backgroundImage,
-  name,
-  HeadStory,
-}) {
+function Header(props) {
   const hist = useHistory();
+  const {
+    HomeFont,
+    ProfileFont,
+    CarBrandsFont,
+    backgroundImage,
+    name,
+    HeadStory,
+  } = props;
   return (
     <div
       className="HeaderHeroImage"

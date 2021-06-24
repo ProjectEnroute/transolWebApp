@@ -1,7 +1,10 @@
 import React from 'react';
-import Header from '../../Common/Header/Header';
-import profileBanner from '../../Images/imageFolder/profileBanner.jpg';
 import './ProfilePage.css';
+//  Component imports --------------------------------
+import Header from '../../Common/Header/Header';
+import TabView from '../../Common/ProfilePageTabView/ProfilePageTabView';
+// Image imports -------------------------------------
+import ProfilePicture from '../../Images/imageFolder/profilePictureMock.jpg';
 
 function Profile() {
   return (
@@ -9,23 +12,23 @@ function Profile() {
       <center>
         <Header
           name="%UserName%"
-          backgroundImage={profileBanner}
+          backgroundImage={ProfilePicture}
           HeadStory="%Address%, %State%"
         />
       </center>
-      <center>
+
+      <div className="profileContainer">
         <div className="Profile">
-          <img />
-          <h1>%Transol credit%</h1>
+          <img src={ProfilePicture} />
         </div>
-      </center>
+        <div className="profileInfo">
+          <h1>%TransolCoins%</h1>
+          <p>%Subscription%</p>
+        </div>
+      </div>
+
       <center>
-        <div className="ProfileOptionButton">
-          <p>Payment</p>
-          <p>my fleet</p>
-          <p>My Orders</p>
-          <p>Ongoing</p>
-        </div>
+        <TabView />
       </center>
     </div>
   );

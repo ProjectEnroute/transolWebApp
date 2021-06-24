@@ -1,0 +1,65 @@
+.tabViewContainer {
+  height: auto;
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 5.5%;
+  padding-right: 5.5%;
+}
+
+/* Payment tab */
+#payments_tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#payments_tab .payment {
+  font-size: 400%;
+  color: #773333;
+  margin-top: -5.5%;
+  cursor: pointer;
+  font-weight: bolder;
+  font-family: pepetua;
+}
+
+#payments_tab .fleet {
+  color: #000;
+  font-size: 300%;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: pepetua;
+}
+
+#payments_tab .fleet:hover {
+  color: #a29345;
+}
+
+#payments_tab .orders {
+  color: #000;
+  font-size: 300%;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: pepetua;
+}
+
+#payments_tab .orders:hover {
+  color: #538e57;
+}
+
+#payments_tab .ongoing {
+  color: #000;
+  font-size: 300%;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: pepetua;
+}
+
+#payments_tab .ongoing:hover {
+  color: #3d7a91;
+}
+
+/* My fleet tab */
+/* My orders tab */
+/* Ongoing tab */

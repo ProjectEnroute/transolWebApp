@@ -30,47 +30,6 @@
 	text-align: start;
 } */
 
-.HomeTrayContainer {
-  width: 100%;
-  height: 120px;
-  background-color: #f3f3f3;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-  transition: all 300ms ease-out;
-  cursor: pointer;
-  box-shadow: 3px 3px 6px 5px rgba(0, 0, 0, 0.3);
-  border: 3px solid #707070;
-  border-radius: 16px;
-}
-
-.HomeTrayContainer:hover {
-  transform: scale(1.01);
-  background-color: rgb(235, 234, 234);
-}
-
-.HomeTrayContainer > h1 {
-  font-weight: bold;
-  margin-left: 2%;
-  color: brown;
-  font-size: 60px;
-}
-
-.HomeTrayContainer > p {
-  margin-left: 40px;
-  font-size: 40px;
-  font-weight: 400;
-  margin-top: 35px;
-  font-family: pepertua;
-}
-
-.HomeTrayContainer > img {
-  height: 30px;
-  width: 30px;
-  margin-left: 50px;
-}
-
 .pat {
   height: 80px;
   border-left: 7px solid #15181e;
@@ -78,7 +37,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 30px;
-  margin-top: 30px;
+  margin-top: 40px;
   margin-left: 0.1%;
   margin-right: 0.1%;
   transition: all 100ms ease-out;
@@ -108,57 +67,4 @@
 .arrow {
   height: 35px;
   width: 25px;
-}
-
-.PatronizeUsCardHolder {
-  width: 100%;
-  display: grid;
-  grid-template-rows: 520px 520px;
-  shape-outside: 10px;
-  grid-template-columns: 33% 33% 33%;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.patronizeUsCard {
-  width: auto;
-  /* height: 400px;*/
-  height: auto;
-  background-color: #f3f3f3;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  transition: all 300ms ease-out;
-  border-radius: 40px;
-  padding-bottom: 20px;
-  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.4);
-}
-
-.patronizeUsCard:hover {
-  transform: scale(1.03);
-  box-shadow: 5px 5px 5px 5px rgb(211, 211, 211);
-}
-
-.patronizeUsCard > img {
-  width: 100%;
-  height: 300px;
-  border-radius: 10px 10px 0px 0px;
-  background-color: rgb(119, 117, 117);
-  object-fit: cover;
-  border-radius: 40px;
-}
-
-.patronizeUsCard > h1 {
-  text-align: flex-start;
-  margin-left: 10%;
-  font-weight: bolder;
-  line-height: -20px;
-  font-family: Poppins;
-}
-
-.patDiv {
-  margin-left: 10%;
-  color: #86898c;
-  font-family: Poppins;
 }

@@ -5,6 +5,8 @@ import './HomePage.css';
 import Header from '../../Common/Header/Header';
 import HomeCard from '../../Common/HomeCard/HomeCard';
 import NearestOffice from '../../Common/NearestOffice/NearestOffice';
+import PatronizeUsCard from '../../Common/PatronizeUsCard/PatronizeUsCard';
+import HomePageTray from '../../Common/HomePageTray/HomePageTray';
 // Icon imports --------------------------------------------------------
 import repair from '../../Images/iconFolder/spanner.png';
 import brand from '../../Images/iconFolder/car.png';
@@ -22,29 +24,6 @@ import homebackgroundImage from '../../Images/imageFolder/headerTheme.jpg';
 function HomePage() {
   const hist = useHistory();
 
-  const HomePageTray = ({ color, title }) => {
-    return (
-      <div className="HomeTrayContainer">
-        <h1 style={{ color: color }}> |</h1>
-        <p>{title}</p>
-      </div>
-    );
-  };
-
-  const PatronizeUsCard = ({ title, src, Desc_1, Desc_2, Desc_3 }) => {
-    return (
-      <div className="patronizeUsCard">
-        <img src={src} />
-        <h1>{title}</h1>
-        <div className="patDiv">
-          <p>{Desc_1}</p>
-          <p>{Desc_2}</p>
-          <p>{Desc_3}</p>
-        </div>
-      </div>
-    );
-  };
-
   return (
     <div className="HomePage">
       {/* Header component */}
@@ -53,7 +32,7 @@ function HomePage() {
           name="Transol"
           HeadStory="your walk with ease"
           HomeFont="40"
-          backgroundImage=" 'url('  + { homebackgroundImage } + ' )' "
+          backgroundImage={homebackgroundImage}
         />
       </center>
 
