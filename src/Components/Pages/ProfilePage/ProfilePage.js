@@ -35,6 +35,8 @@ function Profile() {
       </center>
       <center>
         <OrdersTab />
+        <FleetTab />
+        <PaymentTab />
       </center>
     </div>
   );

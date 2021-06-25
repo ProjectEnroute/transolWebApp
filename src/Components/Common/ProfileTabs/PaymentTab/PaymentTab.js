@@ -10,7 +10,7 @@ import paymentCoinIcon from '../../../Images/iconFolder/paymentCoinIcon.png';
 
 function PaymentTab() {
   return (
-    <div className="container">
+    <div className="paymentContainer">
       <PaymentTabContent text="Add new payment method" icon={addPaymentIcon} />
 
       <PaymentTabContent text="View payment methods" icon={paymentCardIcon} />

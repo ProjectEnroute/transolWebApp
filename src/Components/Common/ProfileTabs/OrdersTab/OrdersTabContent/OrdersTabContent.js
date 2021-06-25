@@ -1,8 +1,9 @@
 import React from 'react';
 import './OrdersTabContent.css';
-import CancelOutlinedIcon from '@material-ui/icons/CancelOutlined';
+import KeyboardArrowRightOutlinedIcon from '@material-ui/icons/KeyboardArrowRightOutlined';
 
 function OrdersTabContent(props) {
+  /* Awaiting shipping | Shipped | Dispatched | Delivered */
   const {
     image,
     productName,
@@ -12,7 +13,7 @@ function OrdersTabContent(props) {
     itemCost,
   } = props;
   return (
-    <div className="contentHolder">
+    <div className="ordersContentHolder">
       <img src={image} />
       <div className="productInfo">
         <h1>{productName}</h1>
@@ -22,7 +23,13 @@ function OrdersTabContent(props) {
       <div className="productStatus">
         <h1>{itemCost}</h1>
         <h3>{deliveryStatus}</h3>
-        <CancelOutlinedIcon color="primary " style={{ fontSize: 50 }} />
+        <div className="viewDiv">
+          <p>View</p>
+          <KeyboardArrowRightOutlinedIcon
+            color="disabled"
+            style={{ fontSize: 60 }}
+          />
+        </div>
       </div>
     </div>
   );

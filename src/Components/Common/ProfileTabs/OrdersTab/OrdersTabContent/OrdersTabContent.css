@@ -1,4 +1,4 @@
-.contentHolder {
+.ordersContentHolder {
   width: 95%;
   height: 200px;
   display: flex;
@@ -12,7 +12,7 @@
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
 } */
 
-.contentHolder > img {
+.ordersContentHolder > img {
   width: 400px;
   height: 120%;
   outline: none;
@@ -31,7 +31,7 @@
   justify-content: left;
   padding-left: 4%;
   background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .productInfo > h1 {
@@ -49,17 +49,53 @@
   text-align: left;
 }
 
-.productInfo > p {
-  font-size: 150%;
-  font-family: pepertua;
-  color: #dfdfdf;
-  text-align: left;
-}
-
 .productStatus {
   width: 30%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+  padding-top: 0.5%;
+  padding-bottom: 12%;
+  transition: all 200ms ease-in-out;
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+.productStatus:hover {
+  transform: scale(1.03);
+  box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.productStatus > h1 {
+  font-size: 300%;
+  font-family: pepertua;
+  color: #fff;
+  font-weight: 600;
+}
+
+.productStatus > h3 {
+  font-size: 200%;
+  font-family: pepertua;
+  color: #dfdfdf;
+  font-weight: 600;
+}
+
+.viewDiv {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.viewDiv > p {
+  font-size: 150%;
+  font-weight: 500;
+  color: #dfdfdf;
+  font-family: pepertua;
+  margin-top: 4%;
 }

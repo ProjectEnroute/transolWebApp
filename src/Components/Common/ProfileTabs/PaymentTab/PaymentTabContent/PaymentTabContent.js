@@ -4,7 +4,7 @@ import './PaymentTabContent.css';
 function PaymentTabContent(props) {
   const { text, icon } = props;
   return (
-    <div className="contentContainer">
+    <div className="paymentContentContainer">
       <h1> {text}</h1>
       <img src={icon} />
     </div>

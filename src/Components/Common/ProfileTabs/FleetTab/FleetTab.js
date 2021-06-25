@@ -12,7 +12,7 @@ import mockCar_6 from '../../../Images/imageFolder/mockCar_6.jpg';
 
 function FleetTab() {
   return (
-    <div className="container">
+    <div className="fleetContainer">
       <FleetTabContent text="BMW S-CLASS 2017" image={mockCar_1} />
       <FleetTabContent text="Hector Senior 2020" image={mockCar_2} />
       <FleetTabContent text="Range rover rogue" image={mockCar_3} />

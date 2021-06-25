@@ -1,4 +1,4 @@
-.contentContainer {
+.paymentContentContainer {
   width: 95%;
   height: 150px;
   display: flex;
@@ -16,12 +16,12 @@
   box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.2);
 }
 
-.contentContainer:hover {
+.paymentContentContainer:hover {
   background-color: rgba(0, 0, 0, 0.4);
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
 }
 
-.contentContainer > h1 {
+.paymentContentContainer > h1 {
   font-family: pepertua;
   color: #d4d4d4;
   font-weight: 500;
@@ -30,7 +30,7 @@
   margin-top: 1%;
 }
 
-.contentContainer > img {
+.paymentContentContainer > img {
   width: 65px;
   font-weight: 500;
   height: 55px;
