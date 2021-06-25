@@ -1,0 +1,38 @@
+.contentContainer {
+  width: 95%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 3%;
+  padding-right: 3%;
+  align-items: center;
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
+  justify-content: space-between;
+  border-radius: 20px;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+.contentContainer:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contentContainer > h1 {
+  font-family: pepertua;
+  color: #d4d4d4;
+  font-weight: 500;
+  font-size: 300%;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+.contentContainer > img {
+  width: 65px;
+  font-weight: 500;
+  height: 55px;
+  margin-right: 3%;
+}

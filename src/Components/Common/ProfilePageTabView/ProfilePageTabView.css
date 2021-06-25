@@ -131,6 +131,11 @@
   text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
+#fleet_tab .orders:onclick {
+  color: #538e57;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
 #fleet_tab .ongoing {
   color: #000;
   font-size: 280%;

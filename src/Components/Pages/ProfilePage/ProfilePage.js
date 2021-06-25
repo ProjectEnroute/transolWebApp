@@ -4,6 +4,8 @@ import './ProfilePage.css';
 import Header from '../../Common/Header/Header';
 import TabView from '../../Common/ProfilePageTabView/ProfilePageTabView';
 import PaymentTab from '../../Common/ProfileTabs/PaymentTab/PaymentTab';
+import FleetTab from '../../Common/ProfileTabs/FleetTab/FleetTab';
+import OrdersTab from '../../Common/ProfileTabs/OrdersTab/OrdersTab';
 // Image imports -------------------------------------
 import ProfilePicture from '../../Images/imageFolder/profilePictureMock.jpg';
 
@@ -32,7 +34,7 @@ function Profile() {
         <TabView />
       </center>
       <center>
-        <PaymentTab />
+        <OrdersTab />
       </center>
     </div>
   );
