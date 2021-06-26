@@ -1,11 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './ProfilePage.css';
 //  Component imports --------------------------------
 import Header from '../../Common/Header/Header';
 import TabView from '../../Common/ProfilePageTabView/ProfilePageTabView';
-import PaymentTab from '../../Common/ProfileTabs/PaymentTab/PaymentTab';
-import FleetTab from '../../Common/ProfileTabs/FleetTab/FleetTab';
-import OrdersTab from '../../Common/ProfileTabs/OrdersTab/OrdersTab';
 // Image imports -------------------------------------
 import ProfilePicture from '../../Images/imageFolder/profilePictureMock.jpg';
 
@@ -32,11 +29,6 @@ function Profile() {
 
       <center>
         <TabView />
-      </center>
-      <center>
-        <OrdersTab />
-        <FleetTab />
-        <PaymentTab />
       </center>
     </div>
   );

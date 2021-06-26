@@ -1,3 +1,9 @@
+.bigClass {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
 .tabViewContainer {
   height: auto;
   margin-top: 55px;

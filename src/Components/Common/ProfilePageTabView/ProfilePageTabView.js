@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import './ProfilePageTabView.css';
 
+// tab imports ------------------
+import FleetTab from '../ProfileTabs/FleetTab/FleetTab';
+import PaymentTab from '../ProfileTabs/PaymentTab/PaymentTab';
+import OrdersTab from '../ProfileTabs/OrdersTab/OrdersTab';
+
 function ProfilePageTabView() {
   /* All tabs
   payments_tab --- 
@@ -14,6 +19,7 @@ function ProfilePageTabView() {
   const [Bar_3, setBar_3] = useState('');
   const [Bar_4, setBar_4] = useState('');
   const [BarColor, setBarColor] = useState('#a29345');
+  const SelectedTab = 'FleetBar';
 
   // Create on click for payment tab
   const Tab_1 = () => {
@@ -56,25 +62,28 @@ function ProfilePageTabView() {
   };
 
   return (
-    <div className="tabViewContainer">
-      <div id={Tab}>
-        <div className="payment" onClick={Tab_1}>
-          <p>Payment</p>
-          <div className={Bar_1} style={{ backgroundColor: `${BarColor}` }} />
-        </div>
-        <div className="fleet" onClick={Tab_2}>
-          <p>My Fleet</p>
-          <div className={Bar_2} style={{ backgroundColor: `${BarColor}` }} />
-        </div>
-        <div className="orders" onClick={Tab_3}>
-          <p>My Orders</p>
-          <div className={Bar_3} style={{ backgroundColor: `${BarColor}` }} />
-        </div>
-        <div className="ongoing" onClick={Tab_4}>
-          <p>Ongoing</p>
-          <div className={Bar_4} style={{ backgroundColor: `${BarColor}` }} />
+    <div className="bigClass">
+      <div className="tabViewContainer">
+        <div id={Tab}>
+          <div className="payment" onClick={Tab_1}>
+            <p>Payment</p>
+            <div className={Bar_1} style={{ backgroundColor: `${BarColor}` }} />
+          </div>
+          <div className="fleet" onClick={Tab_2}>
+            <p>My Fleet</p>
+            <div className={Bar_2} style={{ backgroundColor: `${BarColor}` }} />
+          </div>
+          <div className="orders" onClick={Tab_3}>
+            <p>My Orders</p>
+            <div className={Bar_3} style={{ backgroundColor: `${BarColor}` }} />
+          </div>
+          <div className="ongoing" onClick={Tab_4}>
+            <p>Ongoing</p>
+            <div className={Bar_4} style={{ backgroundColor: `${BarColor}` }} />
+          </div>
         </div>
       </div>
+      <PaymentTab />
     </div>
   );
 }
