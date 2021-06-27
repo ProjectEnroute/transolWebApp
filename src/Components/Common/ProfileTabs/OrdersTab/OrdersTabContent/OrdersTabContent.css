@@ -4,8 +4,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 70px;
+  margin-top: 60px;
   padding-left: 3%;
+  animation-name: fade, slide-in;
+  animation-duration: 1s;
+}
+
+@keyframes slide-in {
+  from {
+    margin-top: 360px;
+  }
+  to {
+    margin-top: 60px;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* .contentContainer:hover {
