@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
+import { useHistory, Route, HashRouter, Switch } from 'react-router-dom';
 import './ProfilePageTabView.css';
 
 // tab imports ------------------
 import FleetTab from '../ProfileTabs/FleetTab/FleetTab';
 import PaymentTab from '../ProfileTabs/PaymentTab/PaymentTab';
 import OrdersTab from '../ProfileTabs/OrdersTab/OrdersTab';
+import OrdersTabContent from '../ProfileTabs/OrdersTab/OrdersTabContent/OrdersTabContent';
 
 function ProfilePageTabView() {
+  const gist = useHistory();
   /* All tabs
   payments_tab --- 
   fleet_tab --- 
@@ -29,6 +32,7 @@ function ProfilePageTabView() {
     setBar_2('hidden_bar');
     setBar_3('hidden_bar');
     setBar_4('hidden_bar');
+    gist.push('/Payment');
   };
 
   //  Create on click for fleet tab
@@ -39,6 +43,7 @@ function ProfilePageTabView() {
     setBar_2('visible_bar');
     setBar_3('hidden_bar');
     setBar_4('hidden_bar');
+    gist.push('/Fleet');
   };
 
   //  Create on click for orders tab
@@ -49,6 +54,7 @@ function ProfilePageTabView() {
     setBar_2('hidden_bar');
     setBar_3('visible_bar');
     setBar_4('hidden_bar');
+    gist.push('Orders');
   };
 
   //  Create on click for ongoing tab
@@ -83,7 +89,14 @@ function ProfilePageTabView() {
           </div>
         </div>
       </div>
-      <PaymentTab />
+      <HashRouter basename="/profile">
+        <Switch>
+          <Route exact path="/" component={FleetTab} />
+          <Route exact path="/Payment" component={PaymentTab} />
+          <Route exact path="/Fleet" component={FleetTab} />
+          <Route exact path="/Orders" component={OrdersTab} />
+        </Switch>
+      </HashRouter>
     </div>
   );
 }

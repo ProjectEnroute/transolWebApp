@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import './HomePage.css';
 // Component imports -------------------------------------------------
 import Header from '../../Common/Header/Header';

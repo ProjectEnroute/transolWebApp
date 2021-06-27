@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { HashRouter } from 'react-router-dom';
 import './ProfilePage.css';
 //  Component imports --------------------------------
 import Header from '../../Common/Header/Header';
@@ -28,7 +29,9 @@ function Profile() {
       </div>
 
       <center>
-        <TabView />
+        <HashRouter>
+          <TabView />
+        </HashRouter>
       </center>
     </div>
   );

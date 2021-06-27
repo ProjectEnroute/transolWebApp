@@ -1,5 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  BrowserRouter as BrowserRouter,
+  Switch,
+  Route,
+} from 'react-router-dom';
 import 'antd/dist/antd.css';
 
 // page imports -------------------------
@@ -14,7 +18,7 @@ import Profile from './Components/Pages/ProfilePage/ProfilePage';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route exact path="/homepage" component={HomePage} />
@@ -25,7 +29,7 @@ function App() {
         <Route exact path="/transoloffice" component={TransolOffice} />
         <Route exact path="/profile" component={Profile} />
       </Switch>
-    </Router>
+    </BrowserRouter>
   );
 }
 
