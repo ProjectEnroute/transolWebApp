@@ -1,0 +1,274 @@
+.bigClass {
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.tabViewContainer {
+  height: auto;
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* Payment tab */
+#payments_tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Section bars */
+.visible_bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 35px;
+  margin-top: -25%;
+  margin-bottom: 10%;
+}
+
+.hidden_bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 35px;
+  margin-top: -25%;
+  opacity: 0;
+  margin-bottom: 10%;
+}
+
+#payments_tab .payment {
+  font-size: 350%;
+  color: #773333;
+  cursor: pointer;
+  margin-top: -5.5%;
+  font-weight: bolder;
+  font-family: pepetua;
+  text-shadow: 10px 10px 20px rgba(119, 51, 51, 0.7);
+}
+
+#payments_tab .fleet {
+  color: #000;
+  font-size: 280%;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: pepetua;
+  transition: all 300ms ease-in-out;
+}
+
+#payments_tab .fleet:hover {
+  color: #a29345;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#payments_tab .orders {
+  color: #000;
+  font-size: 280%;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: pepetua;
+  transition: all 300ms ease-in-out;
+}
+
+#payments_tab .orders:hover {
+  color: #538e57;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#payments_tab .ongoing {
+  color: #000;
+  font-size: 280%;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: pepetua;
+  transition: all 300ms ease-in-out;
+}
+
+#payments_tab .ongoing:hover {
+  color: #3d7a91;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* My fleet tab */
+#fleet_tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#fleet_tab .payment {
+  cursor: pointer;
+  color: #000;
+  font-size: 280%;
+  font-weight: 600;
+  font-family: pepetua;
+  transition: all 300ms ease-in-out;
+}
+
+#fleet_tab .payment:hover {
+  color: #773333;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#fleet_tab .fleet {
+  color: #a29345;
+  font-size: 350%;
+  font-size: 280%;
+  cursor: pointer;
+  font-weight: bolder;
+  margin-top: -5.5%;
+  font-family: pepetua;
+  text-shadow: 10px 10px 20px rgba(162, 147, 69, 0.7);
+}
+
+#fleet_tab .orders {
+  color: #000;
+  font-size: 280%;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: pepetua;
+  transition: all 300ms ease-in-out;
+}
+
+#fleet_tab .orders:hover {
+  color: #538e57;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#fleet_tab .orders:onclick {
+  color: #538e57;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#fleet_tab .ongoing {
+  color: #000;
+  font-size: 280%;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: pepetua;
+  transition: all 300ms ease-in-out;
+}
+
+#fleet_tab .ongoing:hover {
+  color: #3d7a91;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* My orders tab */
+#orders_tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#orders_tab .payment {
+  cursor: pointer;
+  color: #000;
+  font-size: 280%;
+  font-weight: 600;
+  font-family: pepetua;
+  transition: all 300ms ease-in-out;
+}
+
+#orders_tab .payment:hover {
+  color: #773333;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#orders_tab .fleet {
+  font-size: 280%;
+  cursor: pointer;
+  color: #000;
+  font-weight: 600;
+  font-family: pepetua;
+  transition: all 300ms ease-in-out;
+}
+
+#orders_tab .fleet:hover {
+  color: #a29345;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#orders_tab .orders {
+  color: #538d57;
+  cursor: pointer;
+  font-size: 350%;
+  font-weight: bolder;
+  margin-top: -5.5%;
+  font-family: pepetua;
+  text-shadow: 10px 10px 20px rgba(83, 141, 87, 0.7);
+}
+
+#orders_tab .ongoing {
+  color: #000;
+  font-size: 280%;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: pepetua;
+  transition: all 300ms ease-in-out;
+}
+
+#orders_tab .ongoing:hover {
+  color: #3d7a91;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Ongoing tab */
+#ongoing_tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#ongoing_tab .payment {
+  cursor: pointer;
+  color: #000;
+  font-size: 280%;
+  font-weight: 600;
+  font-family: pepetua;
+  transition: all 300ms ease-in-out;
+}
+
+#ongoing_tab .payment:hover {
+  color: #773333;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+#ongoing_tab .fleet {
+  font-size: 280%;
+  cursor: pointer;
+  color: #000;
+  font-weight: 600;
+  font-family: pepetua;
+  transition: all 300ms ease-in-out;
+}
+
+#ongoing_tab .fleet:hover {
+  color: #a19145;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+#ongoing_tab .orders {
+  cursor: pointer;
+  color: #000;
+  font-size: 280%;
+  font-weight: 600;
+  font-family: pepetua;
+  transition: all 300ms ease-in-out;
+}
+
+#ongoing_tab .orders:hover {
+  color: rgb(83, 141, 87);
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+#ongoing_tab .ongoing {
+  color: #3d7a91;
+  cursor: pointer;
+  font-size: 350%;
+  font-weight: bolder;
+  margin-top: -5.5%;
+  font-family: pepetua;
+  text-shadow: 10px 10px 20px rgba(61, 122, 145, 0.7);
+  background-color: #0000;
+}

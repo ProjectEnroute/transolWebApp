@@ -1,0 +1,58 @@
+.fleetContentContainer {
+  width: 95%;
+  height: 220px;
+  display: flex;
+  flex-direction: row;
+  padding-right: 3%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  justify-content: left;
+  border-radius: 20px;
+  align-items: center;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+  animation-name: fade, fleet-slide-in;
+  animation-duration: 700ms;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.2);
+}
+@keyframes fleet-slide-in {
+  from {
+    margin-top: 70px;
+  }
+  to {
+    margin-top: 20px;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fleetContentContainer:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.fleetContentContainer > h1 {
+  font-family: pepertua;
+  color: #d4d4d4;
+  font-weight: 500;
+  font-size: 350%;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+
+.fleetContentContainer > img {
+  width: 16%;
+  height: 100%;
+  margin-right: 3%;
+  outline: none;
+  object-fit: cover;
+  border-radius: 20px 0px 0px 20px;
+  box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.4);
+}

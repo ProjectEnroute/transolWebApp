@@ -1,0 +1,63 @@
+.PatronizeUsCardHolder {
+  width: 100%;
+  display: grid;
+  shape-outside: 10px;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 33.2% 33.2% 33.2%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.patronizeUsCard {
+  width: 92%;
+  /* height: 400px;*/
+  height: 92%;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  justify-content: space-between;
+  transition: all 300ms ease-out;
+  border-radius: 40px;
+  padding-bottom: 20px;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.4);
+}
+
+.patronizeUsCard:hover {
+  transform: scale(1.03);
+  box-shadow: 5px 5px 5px 5px rgb(211, 211, 211);
+}
+
+.patronizeUsCard > img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: rgb(119, 117, 117);
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.patronizeUsCard > h1 {
+  text-align: flex-start;
+  margin-left: 10%;
+  color: #14171c;
+  font-weight: bolder;
+  font-family: pepertua;
+  font-size: 300%;
+}
+
+.patDiv {
+  margin-left: 10%;
+  color: #86898c;
+  font-family: pepertua;
+}
+
+.patDiv > p {
+  text-align: flex-start;
+  margin-left: 2%;
+  font-weight: 500;
+  color: #86898c;
+  font-family: pepertua;
+  font-size: 150%;
+}

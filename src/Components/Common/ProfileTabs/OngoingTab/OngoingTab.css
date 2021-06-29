@@ -1,0 +1,13 @@
+.ongoingContainer {
+  border-radius: 30px 30px 0px 0px;
+  width: 96%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: space-evenly;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(#3d7a91, #8bc1d6);
+}

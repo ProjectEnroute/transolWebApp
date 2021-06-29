@@ -1,20 +1,26 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import HomePage from './Component/pages/HomePage';
-import OurService from './Component/pages/OurService';
-import SignUpPage from './Component/pages/SignUpPage';
-import TollService from './Component/pages/TollService';
-import AdminPage from './Component/pages/AdminPage';
+import {
+  BrowserRouter as BrowserRouter,
+  Switch,
+  Route,
+} from 'react-router-dom';
 import 'antd/dist/antd.css';
-import HireRanger from './Component/pages/HireRanger';
-import TransolOffice from './Component/pages/TransolOffice';
-import Profile from './Component/pages/Profile';
+
+// page imports -------------------------
+import HomePage from './Components/Pages/HomePage/HomePage';
+import OurService from './Components/Pages/OurServicesPage/OurServicesPage';
+import SignUpPage from './Components/Pages/SignUpPage/SignUpPage';
+import TollService from './Components/Pages/TollServicePage/TollServicesPage';
+import AdminPage from './Components/Pages/AdminPage/AdminPage';
+import HireRanger from './Components/Pages/HireRangerPage/HireRangerPage';
+import TransolOffice from './Components/Pages/TransolOfficePage/TransolOfficePage';
+import Profile from './Components/Pages/ProfilePage/ProfilePage';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Route exact path="/" component={SignUpPage} />
         <Route exact path="/homepage" component={HomePage} />
         <Route exact path="/ourservices" component={OurService} />
         <Route exact path="/tollservices" component={TollService} />
@@ -23,7 +29,7 @@ function App() {
         <Route exact path="/transoloffice" component={TransolOffice} />
         <Route exact path="/profile" component={Profile} />
       </Switch>
-    </Router>
+    </BrowserRouter>
   );
 }
 
