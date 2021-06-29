@@ -50,7 +50,7 @@
 
 .SignUpContent > button:hover {
   background-color: white;
-  color: rgb(136, 8, 8);
+  /* color: rgb(136, 8, 8); */
   font-weight: bold;
 }
 
