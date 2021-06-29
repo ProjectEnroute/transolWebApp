@@ -69,13 +69,17 @@ function ProfilePageTabView() {
   };
 
   return (
+/* Create main div container */
     <div className="bigClass">
+    
+//     Sub div container
       <div className="tabViewContainer">
         <div id={Tab}>
           <div className="payment" onClick={Tab_1}>
             <p>Payment</p>
             <div className={Bar_1} style={{ backgroundColor: `${BarColor}` }} />
           </div>
+          
           <div className="fleet" onClick={Tab_2}>
             <p>My Fleet</p>
             <div className={Bar_2} style={{ backgroundColor: `${BarColor}` }} />
@@ -90,6 +94,8 @@ function ProfilePageTabView() {
           </div>
         </div>
       </div>
+      
+      /* Hash router to hold animation of tab viewr */
       <HashRouter basename="/profile">
         <Switch>
           <Route exact path="/" component={FleetTab} />
