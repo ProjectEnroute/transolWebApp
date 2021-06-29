@@ -15,12 +15,14 @@ import AdminPage from './Components/Pages/AdminPage/AdminPage';
 import HireRanger from './Components/Pages/HireRangerPage/HireRangerPage';
 import TransolOffice from './Components/Pages/TransolOfficePage/TransolOfficePage';
 import Profile from './Components/Pages/ProfilePage/ProfilePage';
+import WelcomePage from './Components/Pages/WelcomePage/WelcomePage';
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={SignUpPage} />
+        <Route exact path="/" component={WelcomePage} />
+        <Route exact path="/signup" component={SignUpPage} />
         <Route exact path="/homepage" component={HomePage} />
         <Route exact path="/ourservices" component={OurService} />
         <Route exact path="/tollservices" component={TollService} />
