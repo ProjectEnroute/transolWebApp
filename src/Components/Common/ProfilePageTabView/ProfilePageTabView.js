@@ -6,7 +6,7 @@ import './ProfilePageTabView.css';
 import FleetTab from '../ProfileTabs/FleetTab/FleetTab';
 import PaymentTab from '../ProfileTabs/PaymentTab/PaymentTab';
 import OrdersTab from '../ProfileTabs/OrdersTab/OrdersTab';
-import OrdersTabContent from '../ProfileTabs/OrdersTab/OrdersTabContent/OrdersTabContent';
+import OngoingTab from '../ProfileTabs/OngoingTab/OngoingTab';
 
 function ProfilePageTabView() {
   const gist = useHistory();
@@ -65,6 +65,7 @@ function ProfilePageTabView() {
     setBar_2('hidden_bar');
     setBar_3('hidden_bar');
     setBar_4('visible_bar');
+    gist.push('Ongoing');
   };
 
   return (
@@ -95,6 +96,7 @@ function ProfilePageTabView() {
           <Route exact path="/Payment" component={PaymentTab} />
           <Route exact path="/Fleet" component={FleetTab} />
           <Route exact path="/Orders" component={OrdersTab} />
+          <Route exact path="/Ongoing" component={OngoingTab} />
         </Switch>
       </HashRouter>
     </div>
