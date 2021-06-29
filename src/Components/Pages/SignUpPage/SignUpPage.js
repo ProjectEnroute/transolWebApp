@@ -43,81 +43,83 @@ function SignUpPage() {
 
   return (
     <div className="SignUpPageContainer">
-      {flip ? (
-        <center className="SignUpContent">
-          <input
-            type="text"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
-          />
-          <input
-            type="text"
-            placeholder="password"
-            value={password}
-            onChange={(e) => {
-              setPassword(e.target.value);
-            }}
-          />
-          <button
-            onClick={() => {
-              LoginPage();
-            }}
-          >
-            {' '}
-            Login
-          </button>
-          <button onClick={SignGoogle()}> Sign in With Google </button>
-          <p>
-            don't have an account{' '}
-            <Link onClick={Flipping}>Create an Account </Link>
-          </p>
-        </center>
-      ) : (
-        <center className="SignUpContent">
-          <input
-            type="text"
-            placeholder="Name"
-            value={name}
-            onChange={(e) => {
-              setName(e.target.value);
-            }}
-          />
-          <input
-            type="text"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
-          />
-          <input
-            type="password"
-            placeholder="Password"
-            type="password"
-            value={password}
-            onChange={(e) => {
-              setPassword(e.target.value);
-            }}
-          />
-          <input
-            type="password"
-            placeholder="Comfirm Password"
-            value={comfirmPassword}
-            onChange={(e) => {
-              setComfirmPassword(e.target.value);
-            }}
-          />
+      <div className="thinFilm">
+        {flip ? (
+          <center className="SignUpContent">
+            <input
+              type="text"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+            />
+            <input
+              type="text"
+              placeholder="password"
+              value={password}
+              onChange={(e) => {
+                setPassword(e.target.value);
+              }}
+            />
+            <button
+              onClick={() => {
+                LoginPage();
+              }}
+            >
+              {' '}
+              Login
+            </button>
+            <button onClick={SignGoogle()}> Sign in With Google </button>
+            <p>
+              don't have an account{' '}
+              <Link onClick={Flipping}>Create an Account </Link>
+            </p>
+          </center>
+        ) : (
+          <center className="SignUpContent">
+            <input
+              type="text"
+              placeholder="Name"
+              value={name}
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
+            />
+            <input
+              type="text"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              type="password"
+              value={password}
+              onChange={(e) => {
+                setPassword(e.target.value);
+              }}
+            />
+            <input
+              type="password"
+              placeholder="Comfirm Password"
+              value={comfirmPassword}
+              onChange={(e) => {
+                setComfirmPassword(e.target.value);
+              }}
+            />
 
-          <button onClick={SignUp()}> Sign Up </button>
-          <button onClick={SignGoogle()}> Sign Up With Google </button>
-          <p>
-            already have an account <Link onClick={Flipping}>Login </Link>
-          </p>
-        </center>
-      )}
+            <button onClick={SignUp()}> Sign Up </button>
+            <button onClick={SignGoogle()}> Sign Up With Google </button>
+            <p>
+              already have an account <Link onClick={Flipping}>Login </Link>
+            </p>
+          </center>
+        )}
+      </div>
     </div>
   );
 }
