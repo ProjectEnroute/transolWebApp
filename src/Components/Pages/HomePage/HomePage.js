@@ -1,6 +1,8 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './HomePage.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 // Component imports -------------------------------------------------
 import Header from '../../Common/Header/Header';
 import HomeCard from '../../Common/HomeCard/HomeCard';
@@ -23,6 +25,7 @@ import homebackgroundImage from '../../Images/imageFolder/headerTheme.jpg';
 
 function HomePage() {
   const hist = useHistory();
+  AOS.init({ duration: 400, easing: 'ease-in-out' });
 
   return (
     <div className="HomePage">
@@ -87,6 +90,7 @@ function HomePage() {
             onClick={() => {
               hist.push('/tollservices');
             }}
+            data-aos="zoom-out-right"
           >
             <HomePageTray title="Toll services" color="#D64A4A" />
           </div>
@@ -94,13 +98,14 @@ function HomePage() {
             onClick={() => {
               hist.push('/hire');
             }}
+            data-aos="zoom-out-right"
           >
             <HomePageTray title="Hire a ranger" color="#C5B358" />
           </div>
-          <div>
+          <div data-aos="zoom-out-right">
             <HomePageTray title="Order repair specialist" color="#5CCE64" />
           </div>
-          <div>
+          <div data-aos="zoom-out-right">
             <HomePageTray title="Hire tansport conveyors" color="#509BB7" />
           </div>
           {/* ------------------------ */}
