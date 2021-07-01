@@ -9,14 +9,7 @@ import { image } from 'faker';
 
 function Header(props) {
   const hist = useHistory();
-  const {
-    HomeFont,
-    ProfileFont,
-    CarBrandsFont,
-    backgroundImage,
-    name,
-    HeadStory,
-  } = props;
+  const { backgroundImage, name, HeadStory } = props;
   return (
     <div
       className="HeaderHeroImage"

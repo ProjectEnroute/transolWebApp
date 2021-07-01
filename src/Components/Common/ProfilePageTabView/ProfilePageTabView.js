@@ -32,7 +32,7 @@ function ProfilePageTabView() {
     setBar_2('hidden_bar');
     setBar_3('hidden_bar');
     setBar_4('hidden_bar');
-    gist.push('/Payment');
+    gist.replace('/Payment');
   };
 
   //  Create on click for fleet tab
@@ -43,7 +43,7 @@ function ProfilePageTabView() {
     setBar_2('visible_bar');
     setBar_3('hidden_bar');
     setBar_4('hidden_bar');
-    gist.push('/Fleet');
+    gist.replace('/Fleet');
   };
 
   //  Create on click for orders tab
@@ -54,7 +54,7 @@ function ProfilePageTabView() {
     setBar_2('hidden_bar');
     setBar_3('visible_bar');
     setBar_4('hidden_bar');
-    gist.push('Orders');
+    gist.replace('Orders');
   };
 
   //  Create on click for ongoing tab
@@ -65,21 +65,19 @@ function ProfilePageTabView() {
     setBar_2('hidden_bar');
     setBar_3('hidden_bar');
     setBar_4('visible_bar');
-    gist.push('Ongoing');
+    gist.replace('Ongoing');
   };
 
   return (
-/* Create main div container */
+    /* -----Create main div container -----*/
     <div className="bigClass">
-    
-//     Sub div container
       <div className="tabViewContainer">
         <div id={Tab}>
           <div className="payment" onClick={Tab_1}>
             <p>Payment</p>
             <div className={Bar_1} style={{ backgroundColor: `${BarColor}` }} />
           </div>
-          
+
           <div className="fleet" onClick={Tab_2}>
             <p>My Fleet</p>
             <div className={Bar_2} style={{ backgroundColor: `${BarColor}` }} />
@@ -94,8 +92,8 @@ function ProfilePageTabView() {
           </div>
         </div>
       </div>
-      
-      /* Hash router to hold animation of tab viewr */
+
+      {/* ----- Hash router to hold animation of tab view ----- */}
       <HashRouter basename="/profile">
         <Switch>
           <Route exact path="/" component={FleetTab} />

@@ -77,7 +77,7 @@ function HomePage() {
         {/* Home page tray component */}
         <div className="HomePageTrayHolder">
           {/* Our services ection title */}
-          <div className="pat">
+          <div className="pat" onClick={() => hist.push('/ourservices')}>
             <p>Our services</p>
             <img src={forward} className="arrow" />
           </div>
@@ -105,13 +105,13 @@ function HomePage() {
           </div>
           {/* ------------------------ */}
 
-          {/* Patronize us section title */}
+          {/* ----- Patronize us section title ----- */}
           <div className="pat">
             <p>Patronize us</p>
             <img src={forward} className="arrow" />
           </div>
 
-          {/* Patronize us card component grid */}
+          {/* ----- Patronize us card component gri ----- */}
           <div className="PatronizeUsCardHolder">
             <PatronizeUsCard
               title="Head Light"

@@ -21,8 +21,8 @@
 
 .HeaderHeroImage2 {
   width: 100%;
-  height: 500px;
-  background-image: url('../../Images/imageFolder/tolling.jpg');
+  height: 700px;
+  background-image: url('../../Images/imageFolder/ourServices.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,9 +70,9 @@
 .headText {
   font-size: 160px;
   font-weight: 600;
-  font-family: perpetua;
   color: #bbbbbb;
   margin-top: -25px;
+  font-family: perpetua;
 }
 
 .headMotto {
