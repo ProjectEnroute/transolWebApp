@@ -5,7 +5,7 @@ import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 function OurServicesTiles(props) {
   const { image, title, desc } = props;
   return (
-    <div className="ourServices_container" data-aos="zoom-out-right">
+    <div className="ourServices_container">
       <img src={image} className="ourServices_image" />
       <div className="ourServices_textDiv">
         {/* ----- Card title ----- */}
