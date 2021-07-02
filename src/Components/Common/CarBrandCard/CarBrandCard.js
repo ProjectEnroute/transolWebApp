@@ -9,9 +9,12 @@ function CarBrandCard(props) {
   if (availability === 'yes') {
     availText = 'Info available';
     availColor = 'rgba(92, 219, 120, 0.6)';
+  } else if (availability === 'no') {
+    availText = 'No info available';
+    availColor = 'rgba(219, 68, 42, 0.4)';
   } else {
-    availText = 'Info available';
-    availColor = 'rgba(92, 219, 120, 0.6)';
+    availText = 'Undefined';
+    availColor = 'rgba(128, 128, 128,0.5)';
   }
 
   return (
@@ -19,7 +22,7 @@ function CarBrandCard(props) {
       {/* ----- logo and car brand name ----- */}
       <h1 style={{ color: color }}> | </h1>
       <img src={image} />
-      <p>{title}</p>
+      <p className="brand_name">{title}</p>
 
       {/* ----- availability of car info and sales ----- */}
       <div
