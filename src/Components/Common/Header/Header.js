@@ -54,7 +54,7 @@ function Header(props) {
           <p
             style={{ fontSize: 'CarBrandsFont' }}
             onClick={() => {
-              hist.push('/carbrand');
+              hist.push('/carbrands');
             }}
           >
             Car Brands

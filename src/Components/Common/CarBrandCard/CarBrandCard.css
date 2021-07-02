@@ -1,0 +1,39 @@
+.carbrand_card_container {
+  width: 97%;
+  height: 150px;
+  background-color: #f3f3f3;
+  margin-top: 30px;
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  border-radius: 13px 13px 13px 13px;
+  box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+.carbrand_card_container > img {
+  width: 10%;
+  height: 130px;
+}
+
+.carbrand_card_container > h1 {
+  font-weight: bolder;
+  font-size: 700%;
+}
+
+.carbrand_card_availability_div {
+  height: fit-content;
+  width: fit-content;
+  border-radius: 8px 8px 8px 8px;
+  display: flex;
+  padding-left: 8px;
+  padding-right: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.carbrand_card_availability_div > p {
+  color: #ffffff;
+  font-size: 120%;
+  font-weight: bold;
+  font-family: pepertua;
+}

@@ -15,6 +15,7 @@ import AdminPage from './Components/Pages/AdminPage/AdminPage';
 import HireRanger from './Components/Pages/HireRangerPage/HireRangerPage';
 import TransolOffice from './Components/Pages/TransolOfficePage/TransolOfficePage';
 import Profile from './Components/Pages/ProfilePage/ProfilePage';
+import CarBrands from './Components/Pages/CaBrands/CarBrands';
 import WelcomePage from './Components/Pages/WelcomePage/WelcomePage';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route exact path="/tollservices" component={TollService} />
         <Route exact path="/adminpanel" component={AdminPage} />
         <Route exact path="/hire" component={HireRanger} />
+        <Route exact path="/carbrands" component={CarBrands} />
         <Route exact path="/transoloffice" component={TransolOffice} />
         <Route exact path="/profile" component={Profile} />
       </Switch>
