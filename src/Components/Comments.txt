@@ -3,3 +3,6 @@
 * Every new component attachment should have a comment to state so *
 
 * Component props should be entered through array mapping *
+
+---------------- AOS (Animate on scroll) -------------------------
+--------------- Semantic UI -------------------------------------
