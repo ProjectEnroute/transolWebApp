@@ -17,12 +17,13 @@ import TransolOffice from './Components/Pages/TransolOfficePage/TransolOfficePag
 import Profile from './Components/Pages/ProfilePage/ProfilePage';
 import CarBrands from './Components/Pages/CaBrands/CarBrands';
 import WelcomePage from './Components/Pages/WelcomePage/WelcomePage';
+import PaymentMethodsPage from './Components/Pages/PaymentMethodsPage/PaymentMethodsPage';
 
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Route exact path="/" component={PaymentMethodsPage} />
         <Route exact path="/signup" component={SignUpPage} />
         <Route exact path="/homepage" component={HomePage} />
         <Route exact path="/ourservices" component={OurService} />
@@ -31,6 +32,7 @@ function App() {
         <Route exact path="/hire" component={HireRanger} />
         <Route exact path="/carbrands" component={CarBrands} />
         <Route exact path="/transoloffice" component={TransolOffice} />
+        <Route exact path="/paymentmethods" component={PaymentMethodsPage} />
         <Route exact path="/profile" component={Profile} />
       </Switch>
     </BrowserRouter>
