@@ -6,6 +6,9 @@ function PaymentMethodsPage() {
   return (
     <div className="paymentpageContainer">
       <h1 style={{ color: '#000000', fontSize: '400%' }}>Payment Methods</h1>
+      <h1 style={{ color: '#000000', fontSize: '400%', marginTop: '-5%' }}>
+        ___________________________________
+      </h1>
 
       <PaymentCard
         cardType="debit card"

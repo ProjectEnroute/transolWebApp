@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './OngoingTab.css';
 import OngoingTabContent from './OngoingTabContent/OngoingTabContent';
 // image imports -------------------------------
@@ -10,6 +10,9 @@ import mockCar_5 from '../../../Images/imageFolder/mockCar_5.jpg';
 import mockCar_6 from '../../../Images/imageFolder/mockCar_6.jpg';
 
 function OngoingTab() {
+  useEffect(() => {
+    console.log('This is the Ongoing tab rendered');
+  }, []);
   return (
     <div className="ongoingContainer">
       <OngoingTabContent text="Under repair" image={mockCar_5} />

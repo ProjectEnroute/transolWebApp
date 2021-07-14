@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './FleetTab.css';
 // component imports ---------------------------
 import FleetTabContent from './FleetTabContent/FleetTabContent';
@@ -11,6 +11,9 @@ import mockCar_5 from '../../../Images/imageFolder/mockCar_5.jpg';
 import mockCar_6 from '../../../Images/imageFolder/mockCar_6.jpg';
 
 function FleetTab() {
+  useEffect(() => {
+    console.log('This is the fleet tab rendered');
+  });
   return (
     <div className="fleetContainer">
       <FleetTabContent text="BMW S-CLASS 2017" image={mockCar_1} />

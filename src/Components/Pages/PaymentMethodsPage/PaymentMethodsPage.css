@@ -3,10 +3,56 @@
   height: auto;
   display: flex;
   align-items: center;
+  padding: 30px;
   flex-direction: column;
   background-color: #d4d4d4;
 }
 .addcardButton {
+  width: 70%;
+  height: 90px;
+  background-color: #111821;
+  border-radius: 25px;
+  display: flex;
+  padding-top: 1.5%;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+  box-shadow: 5px 5px 15px 5px rgba(17, 24, 33, 0.4);
+}
+
+.addcardButton:hover {
+  box-shadow: 8px 8px 18px 8px rgba(17, 24, 33, 0.5);
+  transform: scale(1.03);
+}
+
+.addcardButton > p {
+  color: #fff;
+  font-size: 200%;
+  font-family: Gilroy-Bold;
 }
 .managecardButton {
+  width: 70%;
+  height: 90px;
+  background-color: rgb(181, 25, 25);
+  border-radius: 25px;
+  display: flex;
+  margin: 20px;
+  padding-top: 1.5%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 15px 5px rgba(181, 25, 25, 0.4);
+}
+
+.managecardButton:hover {
+  box-shadow: 8px 8px 18px 8px rgba(181, 25, 25, 0.5);
+  transform: scale(1.03);
+}
+
+.managecardButton > p {
+  color: #fff;
+  font-size: 200%;
+  font-family: Gilroy-Bold;
 }
